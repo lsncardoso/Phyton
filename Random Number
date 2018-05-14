@@ -1,0 +1,11 @@
+import random
+num = random.randint(1,10) 
+choice = int(input('Escreva um número'))
+
+while True:
+  if choice != num:
+    choice = int(input('Palpite errado,tente novamente'))
+    continue
+  elif choice == num:
+    print('Parabéns você acertou')
+    break
